@@ -1,0 +1,31 @@
+server:
+  port: 8088
+spring:
+  #  datasource:
+  #    url: jdbc:mysql://192.168.145.131:3306/test?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
+  #    username: root
+  #    password: 123456
+  #    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: spring-boot-jpa-mongodb
+  # mongodb
+  data:
+    mongodb:
+      uri: mongodb://admin:123%40abcd@10.10.27.1:37017/test_zhaoyh?authSource=admin
+  #      host: 10.10.27.1
+  #      port: 37017
+  #      username: admin
+  #      password: 123@abcd
+  #      database: test_zhaoyh
+  #      authentication-database: admin
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 200MB
+
+
+  logging:
+    path: /data/logs/spring-boot-logback
+    level:
+      root: debug
+
